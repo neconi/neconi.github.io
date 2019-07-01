@@ -1,6 +1,9 @@
 $(function(){
 	
 	//ナビゲーション表示切り替え
+	
+	$("nav").addClass("nav-init");
+	
 	$(".nav-close").click(function() {
 		$("header").fadeIn(300);
 		$("nav").fadeOut( 300, function(){$("nav").addClass("nav-init")});
