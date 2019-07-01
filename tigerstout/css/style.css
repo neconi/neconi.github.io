@@ -94,8 +94,6 @@ header {
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
-	/*position: fixed;
-	z-index:1;*/
 	background: rgb(0,0,0);
 	color: rgb(255,255,255);
 }
@@ -137,11 +135,10 @@ header {
 	position: absolute;
 	top: 0;
 	right: 0;
-	padding: 0.5rem 1rem;
+	padding: 0 1rem;
 	text-align: center;
 	display: block;
-	/*position: fixed;
-	z-index:2;*/
+	font-size: 1.6rem;
 }
 
 .nav-open:hover {
@@ -314,7 +311,7 @@ footer {
 
 /*Responsive*/
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 415px) {
 	
 	.slide {
 		height: 80vw;
