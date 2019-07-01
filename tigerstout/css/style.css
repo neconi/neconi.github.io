@@ -1,0 +1,413 @@
+@charset "UTF-8";
+
+/*Elements*/
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	background: rgb(240,240,200);
+}
+
+h1, p {
+	line-height: 1.6;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(150,60,60);
+}
+
+a:hover {
+	background-color: rgb(150,60,60);
+	color: rgb(255,255,255);
+}
+
+img {
+	display: block;
+	margin-bottom: 0.25rem;
+	object-fit:cover;
+	width: 100%;
+	background: rgb(0,0,0);;
+	height: 8rem;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+li {
+	list-style: none;
+}
+
+table {
+	margin-bottom: 1.5rem;
+	width: 100%;
+}
+
+table, th, td {
+	border: 1px solid rgb(50,50,50);
+	/*border-spacing: 5px;*/
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 0.5rem;
+	text-align: center;
+}
+
+th {
+	font-weight: normal;
+	white-space: nowrap;
+	border-left-width: 0.5rem;
+}
+
+figcaption {
+	text-align: center;
+	font-size: 0.875rem;
+	color: rgb(100,100,100);
+	margin-bottom: 1rem;
+}
+
+/*Layout*/
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 3.6rem;
+}
+
+header, main {
+	margin-bottom: 1rem;
+}
+
+header {
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+}
+
+/*Header*/
+.logo {
+	padding: 0.5rem;
+	font-size: 1rem;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	/*position: fixed;
+	z-index:1;*/
+	background: rgb(0,0,0);
+	color: rgb(255,255,255);
+}
+
+.logo-link {
+	color: rgb(255,255,255);
+}
+
+.logo-link:hover {
+	background: rgb(0,0,0);
+	color: rgb(255,255,255);
+}
+
+.slide {
+	width: 100%;
+	height: 18rem;
+	position: relative;
+	background: rgb(0,0,0);
+	top:2.6rem;
+}
+
+.slide-item {
+	display: none;
+}
+
+.main-image {
+	height: 18rem;
+	position: absolute;
+}
+
+/*Navigation*/
+.nav-init {
+	display: none;
+}
+
+.nav-open {
+	background-color: rgb(150,60,60);
+	color: rgb(255,255,255);
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.5rem 1rem;
+	text-align: center;
+	display: block;
+	/*position: fixed;
+	z-index:2;*/
+}
+
+.nav-open:hover {
+	filter: contrast(150%);
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	z-index: 200;
+	width: 100%;
+	top: 0;
+	box-shadow: 0 5px 8px rgba(0,0,0,1);
+}
+
+.nav-item {
+	width: 100%;
+}
+
+.nav-link {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(150,60,60);
+	color: rgb(255,255,255);
+	padding: 0.5rem;
+	text-align: center;
+	border-bottom: 1px solid rgb(255,255,255);
+}
+
+.nav-link:hover {
+	filter: contrast(150%);
+}
+
+.nav-close {
+	background-color: rgb(0,0,0);
+}
+
+/*Main*/
+main {
+	padding: 0.75rem  0.75rem 0;
+}
+
+.box {
+	margin-bottom: 2.5rem;
+}
+
+.box-2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.box-3 {
+	border: 1px solid rgb(60,60,30);
+	padding: 1rem;
+	margin: 0 0 1.5rem ;
+}
+
+.rvs {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+/*Card UI*/
+.card {
+	background: rgb(255,255,255);
+	border: 1px solid rgb(180,180,150);
+	border-radius: 5px;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+	margin-bottom: 1.5rem;
+	width: 100%;
+}
+
+.mini {
+	width: 49.5%;
+	margin-bottom: 1rem;
+}
+
+.cap {
+	border-radius: 5px 5px 0 0;
+	height: 12rem;
+	margin-bottom: 0;
+}
+
+.inner {
+	padding: 0.75rem;
+}
+
+/*Headline*/
+.hdL {
+	font-size: 1.25rem;
+	border-bottom: 1px solid rgb(0,0,0);
+	margin-bottom: 1rem;
+}
+
+.hdM {
+	font-size: 1rem;
+	background: rgb(0,0,0);
+	color: rgb(255,255,255);
+	font-weight: normal;
+	padding: 0.25rem 0.5rem;
+}
+
+.hdN {
+	font-size: 1rem;
+}
+
+.hdS::after {
+	content: "★★★";
+	color: rgb(200,200,100);
+	display: block;
+}
+
+/*Image*/
+.imgM {
+	height: 15rem;
+}
+
+/*Button*/
+.btn {
+	display: block;
+	width: 100%;
+	background-color: rgb(150,60,60);
+	color: rgb(255,255,255);
+	padding: 0.5rem;
+	text-align: center;
+	border-bottom: 1px solid rgb(255,255,255);
+	border-radius: 4px;
+	padding: 0.75rem;
+}
+
+.btn:hover {
+	filter: contrast(150%);
+}
+
+.btnI {
+	padding: 0.5rem;
+}
+
+.btnG {
+	background: rgb(0,0,0);
+}
+
+/*Footer*/
+footer {
+	background: rgb(0,0,0);
+	color: rgb(170,170,150);
+	padding: 0.8rem;
+	font-size: 0.75rem;
+	text-align: center;
+}
+
+.copy {
+	margin-bottom: 0;
+}
+
+/*Responsive*/
+@media screen and (min-width: 769px) {
+	
+	p {
+		margin-bottom: 1.5rem;
+	}
+	
+	.wrapper {
+		max-width: 900px;
+	}
+	
+	/*Slide*/
+	.slide {
+		height: 12rem;
+	}
+
+	.main-image {
+		height: 12rem;
+	}
+	
+	/*Navigation*/
+	.nav-open, .nav-close {
+		display: none;
+	}
+	
+	.nav-init {
+		display: block;
+	}
+	
+	.nav {
+		position: relative;
+		z-index: 0;
+		flex-direction: row;
+		flex-wrap: wrap;
+		box-shadow: none;
+		margin-bottom: 2rem;
+	}
+	
+	.nav-item:last-child {
+		display: none;
+	}
+	
+	.nav-item {
+		width: 49%;
+		margin: 0.5%;
+	}
+	
+	.nav-link {
+		border-bottom: none;
+	}
+	
+	/*Main*/
+	.box-1 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	
+	.hdL {
+		margin-bottom: 1.5rem;
+	}
+	
+	/*Card UI*/
+	.card {
+		width: 48%;
+		margin: 0 1% 2rem;
+		position: relative;
+	}
+	
+	.cardB {
+		padding-bottom:2rem;
+		position: relative;
+	}
+	
+	.mini {
+		width: 24%;
+		margin: 0 0.5% 2rem;
+	}
+	
+	.single {
+		margin: 0 auto 2rem;
+		width: 75%;
+	}
+	
+	/*Button*/
+	.btn {
+		width: 60%;
+		margin: 0 auto;
+	}
+	
+	.btnI {
+		position: absolute;
+		bottom: 1rem;
+		left: 20%;
+		padding: 0.25rem;
+		width: 60%;
+	}
+}
+
+
+@media screen and (min-width: 1300px) {
+		/*Slide*/
+	.slide {
+		height: 15rem;
+	}
+
+	.main-image {
+		height: 15rem;
+	}
+}
