@@ -1,23 +1,36 @@
 $(function(){
 	
-	//ナビゲーション表示切り替え
+	////////ナビゲーション////////
 	
+	//ページ読み込み時初期化
 	$("nav").addClass("nav-init");
+	$("footer").after('<div class="dark"></div>');
 	
-	$(".nav-close").click(function() {
-		$("header").fadeIn(300);
-		$("nav").fadeOut( 300, function(){$("nav").addClass("nav-init")});
-		return false;
+	//メニューを閉じる
+	$(".nav-close").click(function(){
+		navClose();
 	});
+	
+	//背景半透明クリック時もメニューを閉じる
+	$(".dark").click(function(){
+		navClose();
+	});
+	
+	function navClose(){
+		$("header").fadeIn(200);
+		$("nav").fadeOut(200, function(){$("nav").addClass("nav-init");$(".dark").fadeOut(200);});
+		return false;
+	}
 
+	//メニューを開く
 	$(".nav-open").click(function() {
-		$("header").fadeOut(300);
-		$("nav").fadeIn( 300, function(){$("nav").removeClass("nav-init");});
+		$(".dark").fadeIn(200, function(){$("nav").fadeIn(200, function(){$("nav").removeClass("nav-init")});});
+		$("header").fadeOut(200);
 		return false;
 	});
 	
 	
-	//スライドショー
+	////////スライドショー////////
 	var i = 0;
 	$(".slide-item").eq(0).show();
 	var total = 3;
@@ -33,6 +46,5 @@ $(function(){
 			$(".slide-item").eq(i).fadeIn(3000);
 		};
 	},8000);
-	
 	
 });
