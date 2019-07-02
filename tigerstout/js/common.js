@@ -20,14 +20,12 @@ $(function(){
 	function navClose(){
 		$("header").fadeIn(200);
 		$("nav").fadeOut(200, function(){$("nav").addClass("nav-init");$(".dark").fadeOut(200);});
-		return false;
 	}
 
 	//メニューを開く
 	$(".nav-open").click(function() {
 		$(".dark").fadeIn(200, function(){$("nav").fadeIn(200, function(){$("nav").removeClass("nav-init")});});
 		$("header").fadeOut(200);
-		return false;
 	});
 	
 	
