@@ -5,7 +5,7 @@ $(function(){
 	//ページ読み込み時初期化
 	$("nav").addClass("nav-init");
 	$("footer").after('<div class="dark"></div>');
-	$(".nav-open").text("＋").show();
+	$(".nav-open").text("＋");
 	
 	//メニューを閉じる
 	$(".nav-close").click(function(){
