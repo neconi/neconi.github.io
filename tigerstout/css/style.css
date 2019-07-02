@@ -27,7 +27,7 @@ a:hover {
 img {
 	display: block;
 	margin-bottom: 0.25rem;
-	object-fit:cover;
+	object-fit: cover;
 	width: 100%;
 	background: rgb(0,0,0);;
 	height: 8rem;
@@ -135,10 +135,11 @@ header {
 	position: absolute;
 	top: 0;
 	right: 0;
-	padding: 0 1rem;
+	padding: 0.5rem;
 	text-align: center;
-	display: block;
 	font-size: 1.6rem;
+	line-height: 1.0;
+	display: none;
 }
 
 .nav-open:hover {
@@ -420,14 +421,13 @@ footer {
 	}
 }
 
-
 @media screen and (min-width: 1300px) {
-		/*Slide*/
+	/*Slide*/
 	.slide {
-		height: 15rem;
+		height: 16rem;
 	}
 
 	.main-image {
-		height: 15rem;
+		height: 16rem;
 	}
 }
