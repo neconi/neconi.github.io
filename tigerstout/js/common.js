@@ -1,5 +1,4 @@
-$(function(){
-	
+$(function(){	
 	////////ナビゲーション////////
 	
 	//ページ読み込み時初期化
@@ -33,28 +32,28 @@ $(function(){
 	$(window).resize(function() {
 		var w = $("header").outerWidth(true);
 		if($(".dark").is(":visible") && w >=769){
-			$("nav").removeAttr("style");
-			$("nav").addClass("nav-init");
+            $("nav").removeAttr("style").addClass("nav-init");
 			$("header").fadeIn(200);
 			$(".dark").fadeOut(200);
 		}
 	});
-	
-	////////スライドショー////////
-	var i = 0;
-	$(".slide-item").eq(0).show();
-	var total = 3;
+});
 
-	setInterval(function(){
-		if(i < total){
-			$(".slide-item").fadeOut(3000);
-			i++;
-			$(".slide-item").eq(i).fadeIn(3000);
-		}else if(i == total){
-			$(".slide-item").fadeOut(3000);
-			i = 0;
-			$(".slide-item").eq(i).fadeIn(3000);
-		};
-	},8000);
-	
+$(window).on("load",function(){
+    ////////スライドショー////////
+    
+    var i = 0;
+    var total = 3;
+
+    setInterval(function(){
+        if(i < total){
+            $(".slide-item").fadeOut(3000);
+            i++;
+            $(".slide-item").eq(i).fadeIn(3000);
+        }else if(i == total){
+            $(".slide-item").fadeOut(3000);
+            i = 0;
+            $(".slide-item").eq(i).fadeIn(3000);
+        };
+    },6000);
 });
