@@ -4,6 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow,noarchive" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS
@@ -14,13 +15,14 @@
     
     <style>
         body {
-            background-color: beige
+            background-color: lightskyblue;
         }
         
         h1, h2, p, a {
+            font-family: "Futura", sans-serif;
             font-size: 1rem;
             font-weight: normal;
-            color: burlywood;
+            color: lightskyblue;
         }
         
         h1, h2, .copy {
@@ -40,8 +42,20 @@
         }
         
         .container {
-            width: 480px;
-            margin: 0 auto;
+            width: 100%;
+            padding: 1rem;
+            margin: 0 auto 4rem;
+        }
+        
+        .item > p {
+            color: white;
+            line-height: 1.8;
+        }
+        
+        @media (min-width: 480px) {
+            .container {
+                width: 480px;
+            }
         }
         
         .item {
@@ -58,7 +72,7 @@
         .link {
             display:  block;
             padding: 0.8rem 0;
-            background-color: burlywood;
+            background-color: deepskyblue;
             width: 100%;
             margin: 0 auto;
             text-align: center;
@@ -70,7 +84,7 @@
         .copy {
             margin: 2rem;
             font-size: 80%;
-            color: burlywood;
+            color: deepskyblue;
         }
         
     </style>
@@ -82,18 +96,18 @@
             <h1>Information</h1>
             <div class="item">
                 <h2>マシュマロ SCALE 再リリース</h2>
-                <img src="img/asobikata-01.png" class="image" >
-                <p>2024年X月にマシュマロSCALEを再リリースしました。体重（現実）をマシュマロの個数（ゆめかわ）に変換してくれるアプリです。計測記録機能やマシュマロ以外の可愛いスケールを追加したよ！ぜひゲットしてね ⸝⋆</p>
+                <img src="img/post_marsh.png" class="image" >
+                <p>2024年夏にマシュマロSCALEを再リリース予定です。体重（現実）をマシュマロの個数（ゆめかわ）に変換してくれるアプリです。計測記録機能やマシュマロ以外の可愛いスケールを追加します。ぜひ使ってみてね ⸝⋆</p>
                 <a href="#" target="_blank" class="link">App Store</a>
             </div>
-            <div class="item">
+            <!-- div class="item">
                 <h2>タイトル</h2>
                 <img src="img/asobikata-01.png" class="image" >
                 <p>テキスト</p>
                 <a href="#" target="_blank" class="link">リンク</a>
-            </div>
+            </div -->
             <footer>
-                <!-- p class="copy">&copy;Tomoko Komatsu</p -->
+                <p class="copy">&copy;Tomoko Komatsu</p>
             </footer>
         </div>
 
